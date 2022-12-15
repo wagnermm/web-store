@@ -23,4 +23,5 @@
 - https://owlcarousel2.github.io/OwlCarousel2/
 - https://getbootstrap.com/docs/5.2/getting-started/introduction/
 - https://fontawesome.com/
+- https://www.canva.com/
 - https://ebaconline.com.br/cursos
