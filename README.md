@@ -24,4 +24,5 @@
 - https://getbootstrap.com/docs/5.2/getting-started/introduction/
 - https://fontawesome.com/
 - https://www.canva.com/
+- https://www.favicon-generator.org/
 - https://ebaconline.com.br/cursos
