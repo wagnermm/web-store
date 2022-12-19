@@ -10,13 +10,43 @@
     <link rel="stylesheet" href="./libs/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="./libs/owl/css/owl.css">
     <!-- icons -->
-    <link rel="shortcut icon" href="./img/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <!-- style custom -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Crystaline</title>
 </head>
 <body>
-
+    <!--- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/logo.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" rel="sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" rel="contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input placeholder="busca" type="text">
+            </div>
+        </div>
+    </nav>
+    
     <!-- libs -->
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="./libs/fontawesome/js/fontawesome.min.js"></script>

@@ -6,3 +6,49 @@
 html {
     overflow-x: hidden;
 }
+
+
+/* Header Style */
+.navbar .navbar-brand {
+    width: 100%;
+    position: relative;
+}
+
+.navbar-brand img {
+	width: 150px;
+}
+
+.bg-dark {
+	background-color: #fff!important;
+	border-bottom: 1px solid rgb(115, 114, 170);
+}
+
+#navbarResponsive {
+	transform: translateX(-30%);
+}
+.navbar-dark .navbar-nav .nav-item {
+	margin: 0px 20px;
+}
+.navbar-dark .navbar-nav .nav-link {
+	text-transform: uppercase;
+	font-size: 15px;
+	font-weight: 700;
+    color: rgb(115, 114, 170);
+	transition: all 0.5s;
+}
+
+.search {
+    width: 30%;
+    float: right;
+    text-align: center;
+}
+
+.search input {
+    background-image: url("../img/icone-search.png");
+    background-repeat: no-repeat;
+    padding: 7px;
+    width: 190px;
+    margin-top: 10px;
+    background-position: 96%;
+    border: 1px solid rgb(115, 114, 170);
+}
