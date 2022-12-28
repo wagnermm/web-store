@@ -7,6 +7,9 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    margin-bottom: 100px;
+}
 
 /* Header Style */
 .navbar .navbar-brand {
@@ -15,12 +18,11 @@ html {
 }
 
 .navbar-brand img {
-	width: 150px;
+	width: 200px;
 }
 
 .bg-dark {
 	background-color: #fff!important;
-	border-bottom: 1px solid rgb(115, 114, 170);
 }
 
 #navbarResponsive {
@@ -33,7 +35,7 @@ html {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: 700;
-    color: rgb(115, 114, 170);
+    color:  rgb(100, 99, 184);
 	transition: all 0.5s;
 }
 
@@ -50,5 +52,94 @@ html {
     width: 190px;
     margin-top: 10px;
     background-position: 96%;
-    border: 1px solid rgb(115, 114, 170);
+    border: 1px solid rgb(100, 99, 184);
+}
+
+/* Banner */
+.banner {
+	margin-top: 30px;
+	background-image: url(../img/banner2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 150px 0px;
+    background-position: center center;
+}
+
+.banner .caption {
+	background-color: rgba(250,250,250,0.9);
+	padding: 30px;
+	max-width: 450px;
+    margin-left: 10%;
+}
+.banner .caption h2 {
+	margin-top: 0px;
+	margin-bottom: 15px;
+	font-size: 24px;
+	font-weight: 700;
+	color: #1e1e1e;
+}
+.banner .caption .line-dec {
+	width: 30px;
+	height: 5px;
+	background-color: rgb(100, 99, 184);
+}
+.banner .caption p {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+/* Products / Featured */
+.featured-items h1 {
+	color: rgb(100, 99, 184);
+	font-weight: bolder;
+}
+
+.featured-items {
+	margin-top: 90px;
+}
+.featured-item {
+	border-radius: 5px;
+	border: 1px solid #eee;
+	padding: 20px;
+	transition: all 0.5s;
+}
+.featured-item:hover {
+	opacity: 0.9;
+}
+.featured-item img {
+	width: 100%;
+}
+.featured-item h4 {
+	font-size: 17px;
+	font-weight: 700;
+	color: #1e1e1e;
+	margin-top: 15px;
+	transition: all 0.5s;
+}
+.featured-item:hover h4 {
+	color: rgb(100, 99, 184);
+}
+.featured-item h6 {
+	color: rgb(100, 99, 184);
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+.owl-theme .owl-dots {
+	text-align: center;
+	margin-top: 30px;
+}
+.owl-theme .owl-dots .owl-dot {
+	outline: none;
+}
+.owl-theme .owl-dots .active span {
+	background-color: rgb(100, 99, 184)!important;
+}
+.owl-theme .owl-dots .owl-dot span {
+	background-color: #aaa;
+	width: 8px;
+	height: 8px;
+	display: inline-block;
+	margin: 0px 5px;
+	outline: none;
 }
