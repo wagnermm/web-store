@@ -55,10 +55,26 @@ body {
     border: 1px solid rgb(100, 99, 184);
 }
 
+.section-heading {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+.section-heading .line-dec {
+	width: 30px;
+	height: 5px;
+	background-color: rgb(100, 99, 184);
+}
+.section-heading h1 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #1e1e1e;
+	margin-top: 15px;
+}
+
 /* Banner */
 .banner {
 	margin-top: 30px;
-	background-image: url(../img/banner2.jpg);
+	background-image: url(../img/banner.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 150px 0px;
@@ -89,13 +105,8 @@ body {
 }
 
 /* Products / Featured */
-.featured-items h1 {
-	color: rgb(100, 99, 184);
-	font-weight: bolder;
-}
-
 .featured-items {
-	margin-top: 90px;
+	margin-bottom: 70px;
 }
 .featured-item {
 	border-radius: 5px;

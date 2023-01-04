@@ -1,8 +1,15 @@
-/* var url = "https://thumbs.dreamstime.com/z/v%C3%A1rias-contas-coloridas-no-mercado-fundo-de-papel-parede-um-colar-colorido-feito-pedras-preciosas-e-joias-semipreciosas-161059879.jpg"
+
+/* alterar o background-image com jQuery */
+
+var url = "https://img.freepik.com/fotos-gratis/cachoeira-de-erawan-no-outono-tailandia-bela-cachoeira-com-piscina-esmeralda-na-natureza_335224-777.jpg?w=2000"
 
 $(document).ready(function() {
-    $('.banner').css('background-image', `url(${url})`)
-}) */
+    $('.banner').on('click', function() {
+        $(this).css('background-image' , `url(${url})`)
+    })
+}) 
+
+
 
 
 /*
@@ -12,15 +19,6 @@ $(document).ready(function() {
 $(document).ready(function() {
     
     $('.owl-carousel').owlCarousel();
-    
-    let titulos = $('h4') // tag
-    
-    let itens = $('.featured-item') // class
-    
-    let destaques = $('#featured') // id
-    
-    console.log(titulos.first());
-    
 
     // Configuração de produtos
     
