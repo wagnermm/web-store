@@ -43,6 +43,13 @@ body {
 	color: rgb(100, 99, 184);
 }
 
+#underline {
+	width: 50px;
+	height: 5px;
+	border-bottom: 2px solid;
+	color: rgb(100, 99, 184);
+}
+
 .search {
     width: 30%;
     float: right;

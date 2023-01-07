@@ -1,3 +1,11 @@
+/*
+/* Exibir linha span
+$(document).ready(function() {
+    $('.navbar-dark .navbar-nav .nav-link').mouseenter(function() {
+        $('#underline').show();
+    });
+});
+*/
 
 /* alterar o background-image com jQuery */
 
