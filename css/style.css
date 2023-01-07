@@ -40,7 +40,7 @@ body {
 }
 .navbar-dark .navbar-toggler-icon:after {
 	content: '\f0c9';
-	color: #FFF;
+	color: #fff;
 	font-size: 22px;
 	line-height: 30px;
 	font-family: 'FontAwesome';
@@ -69,22 +69,6 @@ body {
 	color: rgb(100, 99, 184);
 }
 
-.search {
-	width: 30%;
-	float: right;
-	text-align: center;
-}
-
-.search input {
-	background-image: url("../img/icone-search.png");
-	background-repeat: no-repeat;
-	padding: 7px;
-	width: 190px;
-	margin-top: 10px;
-	background-position: 96%;
-	border: 1px solid rgb(100, 99, 184);
-}
-
 .section-heading {
 	margin-top: 80px;
 	margin-bottom: 40px;
@@ -106,7 +90,7 @@ body {
 /* Banner */
 .banner {
 	margin-top: 30px;
-	background-image: url(../img/banner.jpg);
+	background-image: url(../img/banner.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 150px 0px;
@@ -388,8 +372,8 @@ body {
 	}
 }
 
-::placeholder {
-	color: #fff;
+.featured-item {
+	border: none;
 }
 
 #email {
