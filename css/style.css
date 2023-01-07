@@ -1,20 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 body {
-    margin-bottom: 100px;
+	margin-bottom: 100px;
 }
 
 /* Header Style */
 .navbar .navbar-brand {
-    width: 100%;
-    position: relative;
+	width: 100%;
+	position: relative;
 }
 
 .navbar-brand img {
@@ -28,14 +28,33 @@ body {
 #navbarResponsive {
 	transform: translateX(-30%);
 }
+
+.navbar-dark .navbar-toggler-icon {
+	background-image: none;
+}
+.navbar-dark .navbar-toggler {
+	border-color: rgb(100, 99, 184);
+	background-color: rgb(100, 99, 184);	
+	height: 50px;
+	outline: none;
+}
+.navbar-dark .navbar-toggler-icon:after {
+	content: '\f0c9';
+	color: #FFF;
+	font-size: 22px;
+	line-height: 30px;
+	font-family: 'FontAwesome';
+}
+
 .navbar-dark .navbar-nav .nav-item {
 	margin: 0px 20px;
 }
+
 .navbar-dark .navbar-nav .nav-link {
 	text-transform: uppercase;
 	font-size: 15px;
 	font-weight: 700;
-    color:  black;
+	color:  black;
 	transition: all 0.5s;
 }
 
@@ -51,30 +70,32 @@ body {
 }
 
 .search {
-    width: 30%;
-    float: right;
-    text-align: center;
+	width: 30%;
+	float: right;
+	text-align: center;
 }
 
 .search input {
-    background-image: url("../img/icone-search.png");
-    background-repeat: no-repeat;
-    padding: 7px;
-    width: 190px;
-    margin-top: 10px;
-    background-position: 96%;
-    border: 1px solid rgb(100, 99, 184);
+	background-image: url("../img/icone-search.png");
+	background-repeat: no-repeat;
+	padding: 7px;
+	width: 190px;
+	margin-top: 10px;
+	background-position: 96%;
+	border: 1px solid rgb(100, 99, 184);
 }
 
 .section-heading {
 	margin-top: 80px;
 	margin-bottom: 40px;
 }
+
 .section-heading .line-dec {
 	width: 30px;
 	height: 5px;
 	background-color: rgb(100, 99, 184);
 }
+
 .section-heading h1 {
 	font-size: 22px;
 	font-weight: 700;
@@ -89,14 +110,14 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 150px 0px;
-    background-position: center center;
+	background-position: center center;
 }
 
 .banner .caption {
 	background-color: rgba(250,250,250,0.9);
 	padding: 30px;
 	max-width: 450px;
-    margin-left: 10%;
+	margin-left: 10%;
 }
 .banner .caption h2 {
 	margin-top: 0px;
@@ -297,4 +318,92 @@ body {
 .sub-footer a {
 	color: rgb(100, 99, 184);
 	text-decoration: none;
+}
+
+/* Responsive Style */
+@media (max-width: 991px) {
+	
+	.banner {
+		border-top: none;
+		margin-top: 0px;
+	}
+	.navbar .navbar-brand {
+		width: auto;
+	}
+	.navbar:after {
+		display: none;
+	}
+	#navbarResponsive {
+		z-index: 99999;
+		position: absolute;
+		top: 96px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(250,250,250,0.95);
+		box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	}
+	.navbar-dark .navbar-nav .nav-item {
+		border-bottom: 1px solid #eee;
+	}
+	.navbar-dark .navbar-nav .nav-item:last-child {
+		border-bottom: none;
+	}
+	.navbar-dark .navbar-nav .nav-link {
+		padding: 15px 0px;
+	}
+	.featured-page #filters {
+		text-align: right;
+	} 
+	.single-product .right-content {
+		margin-top: 30px;
+	}
+	.about-page .right-content {
+		margin-top: 30px;
+	}
+	.contact-page .right-content {
+		margin-top: 30px;
+	}
+	.contact-page .right-content .col-md-6,
+	.contact-page .right-content .col-md-12 {
+		padding: 0px;
+	}
+	.featured-page {
+		margin-top: 80px;
+	}
+	.about-page,
+	.contact-page {
+		margin-top: 0px;
+	}
+	
+}
+
+@media (max-width: 767px) {
+	
+	.subscribe-form .main-content form input.button {
+		margin-top: 20px;
+	}
+	.featured-page #filters {
+		margin-top: 15px;
+		text-align: left;
+	}
+}
+
+::placeholder {
+	color: #fff;
+}
+
+#email {
+	position: relative;
+}
+
+.modal {
+	margin-top: 50px;
+}
+
+.invalid {
+	border-color: #f00;
+}
+
+.text-muted {
+	display: none;
 }

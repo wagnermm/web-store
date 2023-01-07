@@ -36,12 +36,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about" rel="sobre">Sobre
+                        <a class="nav-link nav-modal-open" href="#about" rel="sobre">Sobre
                             <span id="underline"></span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact" rel="contato">Contato
+                        <a class="nav-link nav-modal-open" href="#contact" rel="contato">Contato
                             <span id="underline"></span>
                         </a>
                     </li>
@@ -235,6 +235,83 @@
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contato" class="visually-hidden">
+        <form action="" class="form">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" aria-describedby="helpNome">
+                <small id="helpNome" class="text-muted">
+                    Digite um nome válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                <small id="helpEmail" class="text-muted">
+                    Digite um nome válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="date" class="form-label">Data</label>
+                <input type="text" name="date" class="form-control" id="date" placeholder="Digite uma data" aria-describedby="helpDate">
+                <small id="helpDate" class="text-muted">
+                    Digite uma data válida
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="time" class="form-label">Hora</label>
+                <input type="text" name="time" class="form-control" id="time" placeholder="Digite um horário" aria-describedby="helpTime">
+                <small id="helpTime" class="text-muted">
+                    Digite um horário válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" name="cep" class="form-control" id="cep" placeholder="Digite seu cep" aria-describedby="helpCep">
+                <small id="helpCep" class="text-muted">
+                    Digite um cep válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" name="phone" class="form-control" id="phone" placeholder="Digite seu telefone" aria-describedby="helpPhone" required>
+                <small id="helpPhone" class="text-muted">
+                    Digite um telefone válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" name="cpf" class="form-control" id="cpf" placeholder="Digite seu cpf" aria-describedby="helpCpf" required>
+                <small id="helpCpf" class="text-muted">
+                    Digite um cpf válido
+                </small>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    
+    <div id="sobre" class="visually-hidden">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio iusto qui quibusdam corporis exercitationem soluta dolor libero? Facere, excepturi ullam. In, eum officia molestiae veniam obcaecati maiores amet voluptatibus saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat aspernatur nulla asperiores, assumenda autem corrupti possimus facilis nisi velit iste doloribus cumque alias necessitatibus sit exercitationem officia, sed enim at.</p>
     </div>
     
     <!-- libs -->
