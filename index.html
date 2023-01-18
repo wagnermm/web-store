@@ -64,7 +64,7 @@
     </div>
     
     <!-- Produtos / Featured -->
-    <div id="featured" class="featured-items">
+    <div id="featured" class="featured-item">
         <div class="container" id="products">
             <div class="row">
                 <div class="col-md-12">
@@ -79,7 +79,7 @@
                             <img src="./img/produto1.jpg" alt="Item 1">
                             <h4>Produto 1</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -87,7 +87,7 @@
                             <img src="./img/produto2.jpeg" alt="Item 2">
                             <h4>Produto 2</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -95,7 +95,7 @@
                             <img src="./img/produto3.jpeg" alt="Item 3">
                             <h4>Produto 3</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -103,7 +103,7 @@
                             <img src="./img/produto4.jpg" alt="Item 4">
                             <h4>Produto 4</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -111,7 +111,7 @@
                             <img src="./img/produto5.jpg" alt="Item 5">
                             <h4>Produto 5</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -119,7 +119,7 @@
                             <img src="./img/produto6.jpeg" alt="Item 6">
                             <h4>Produto 6</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -127,7 +127,7 @@
                             <img src="./img/produto7.jpg" alt="Item 7">
                             <h4>Produto 7</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -135,7 +135,7 @@
                             <img src="./img/produto8.jpg" alt="Item 8">
                             <h4>Produto 8</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -143,7 +143,7 @@
                             <img src="./img/produto9.jpg" alt="Item 9">
                             <h4>Produto 9</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="single-product.html">
+                            <a href="#">
                                 Comprar
                             </a>
                         </div>
@@ -167,16 +167,17 @@
                     <div class="main-content">
                         <p>Insira seus dados abaixo para receber mais informações atualizadas de nossos produtos</p>
                         <div class="container">
-                            <form action="" method="get" id="subscribe" class="form">
+                            <form action="" id="subscribe" class="form">
                                 <div class="row">
                                     <div class="col-md-7">
                                         <fieldset>
-                                            <input name="email" type="text" class="form-control" id="email" placeholder="Seu e-mail...">
+                                            <input name="email" type="text" class="form-control" id="emailInscricao" placeholder="Seu e-mail...">
+                                            <div id="infoEmail"></div>
                                         </fieldset>
                                     </div>
                                     <div class="col-md-5">
                                         <fieldset>
-                                            <button type="submit" id="form-submit" class="button">Inscreva-se</button>
+                                            <button type="submit" id="form-submit" class="button" disabled>Inscreva-se</button>
                                         </fieldset>
                                     </div>
                                 </div>
@@ -255,14 +256,14 @@
         <form action="" class="form">
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" aria-describedby="helpNome">
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" aria-describedby="helpNome" required>
                 <small id="helpNome" class="text-muted">
                     Digite um nome válido
                 </small>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu e-mail" aria-describedby="helpEmail" required>
                 <small id="helpEmail" class="text-muted">
                     Digite um nome válido
                 </small>

@@ -22,8 +22,8 @@ $('.navbar-toggler').click(function(){
     $('#navbarResponsive').show();
 })
 
-$('.navbar-brand').click(function(){
-    $('#navbarResponsive').hide();
+$('#navbarResponsive').click(function(){
+    $(this).hide();
 })
 
 
@@ -46,10 +46,36 @@ $('.nav-modal-open').on('click', function(e) {
 })
 
 
+/*
+* Validação de formulário inscrição
+*/
+function validaEmail(elemento){
+
+    elemento.addEventListener('focusout', function() {
+
+        const emailValido = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?/i;
+
+        if(this.value.match(emailValido)){
+            document.querySelector('#infoEmail').innerHTML = "";
+            document.querySelector('#form-submit').disabled = false;
+            return false;
+        } else {
+            document.querySelector('#infoEmail').innerHTML = "Por favor, digite o seu e-mail para prosseguir";
+            document.querySelector('#form-submit').disabled = true;
+        };
+  
+    });
+    
+  }
+  let campoEmail = document.querySelectorAll('input#emailInscricao');
+  for( let emFoco of campoEmail) {
+      validaEmail(emFoco);
+  }
+  
 
 /*
-* Validação de formulário
-*/
+ * Validação formulário modal
+ */
 function validate(elem) {
     if(elem.val() == '' ) {
         
@@ -68,7 +94,7 @@ function validate(elem) {
 }
 
 
-$('body').on('submit', '.modal-body .form', function(e) {
+$('.btn').on('submit', '.modal-body .form', function(e) {
     
     e.preventDefault()
     
