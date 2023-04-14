@@ -1,15 +1,14 @@
 # Web Store
 
-## Descrição
-- In the modern world it is common for people to shop online, so it is very important that web stores provide detailed and objective information about the product, since they do not have sellers, and also help the customer make the best decision. It must convey confidence.
-- Neste projeto integrado ao curso front-end irei praticar algumas tecnologias aprendidas até esse momento.
+## Description
+- In the modern world it is common for people to shop online, so it is very important that web stores provide detailed and objective information about the product, since they do not have sellers, and also help the customer make the best decision. It must convey confidence. In this project integrated to the front-end course I will practice some technologies learned until this moment.
 
-## Tecnologias usadas
+## Technologies used
 - HTML5
 - CSS3
 - JavaScript
 
-## Frameworks/Bibliotecas
+## Frameworks/Libraries
 - jQuery
 - jQuery UI
 - jQuery Mask
@@ -17,7 +16,7 @@
 - Bootstrap
 - Fontawesome
 
-## Referências
+## References
 - https://jquery.com/
 - https://jqueryui.com/
 - https://igorescobar.github.io/jQuery-Mask-Plugin/
