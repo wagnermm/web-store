@@ -1,7 +1,8 @@
-# Projeto Web Developer
+# Web Store
 
 ## Descrição
-- Um projeto integrado ao curso front-end com todas as tecnologias aprendidas até esse momento
+- In the modern world it is common for people to shop online, so it is very important that web stores provide detailed and objective information about the product, since they do not have sellers, and also help the customer make the best decision. It must convey confidence.
+- Neste projeto integrado ao curso front-end irei praticar algumas tecnologias aprendidas até esse momento.
 
 ## Tecnologias usadas
 - HTML5
