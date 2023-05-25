@@ -12,8 +12,6 @@ $(document).ready(function() {
     $('.featured-item a').addClass('btn btn-dark stretch-link');
 })
 
-
-
 /*
 * Lista menu hamburger
 */

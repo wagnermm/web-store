@@ -26,24 +26,16 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home
-                            <span id="underline"></span>
-                        </a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#products">Produtos
-                            <span id="underline"></span>
-                        </a>
+                        <a class="nav-link" href="#products">Produtos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="#about" rel="sobre">Sobre
-                            <span id="underline"></span>
-                        </a>
+                        <a class="nav-link nav-modal-open" href="#about" rel="sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-modal-open" href="#contact" rel="contato">Contato
-                            <span id="underline"></span>
-                        </a>
+                        <a class="nav-link nav-modal-open" href="#contact" rel="contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -79,7 +71,7 @@
                             <img src="./img/produto1.jpg" alt="Item 1">
                             <h4>Produto 1</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -87,7 +79,7 @@
                             <img src="./img/produto2.jpeg" alt="Item 2">
                             <h4>Produto 2</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -95,7 +87,7 @@
                             <img src="./img/produto3.jpeg" alt="Item 3">
                             <h4>Produto 3</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -103,7 +95,7 @@
                             <img src="./img/produto4.jpg" alt="Item 4">
                             <h4>Produto 4</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -111,7 +103,7 @@
                             <img src="./img/produto5.jpg" alt="Item 5">
                             <h4>Produto 5</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -119,7 +111,7 @@
                             <img src="./img/produto6.jpeg" alt="Item 6">
                             <h4>Produto 6</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -127,7 +119,7 @@
                             <img src="./img/produto7.jpg" alt="Item 7">
                             <h4>Produto 7</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -135,7 +127,7 @@
                             <img src="./img/produto8.jpg" alt="Item 8">
                             <h4>Produto 8</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -143,7 +135,7 @@
                             <img src="./img/produto9.jpg" alt="Item 9">
                             <h4>Produto 9</h4>
                             <h6>R$ 20,00</h6>
-                            <a href="#">
+                            <a class="nav-modal-open" rel="comprar">
                                 Comprar
                             </a>
                         </div>
@@ -165,7 +157,7 @@
                 </div>
                 <div class="col-md-8 offset-md-2">
                     <div class="main-content">
-                        <p>Insira seus dados abaixo para receber mais informações atualizadas de nossos produtos</p>
+                        <p>Informe seu e-mail abaixo para receber mais informações atualizadas de nossos produtos</p>
                         <div class="container">
                             <form action="" id="subscribe" class="form">
                                 <div class="row">
@@ -311,6 +303,49 @@
     <div id="sobre" class="visually-hidden">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio iusto qui quibusdam corporis exercitationem soluta dolor libero? Facere, excepturi ullam. In, eum officia molestiae veniam obcaecati maiores amet voluptatibus saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat aspernatur nulla asperiores, assumenda autem corrupti possimus facilis nisi velit iste doloribus cumque alias necessitatibus sit exercitationem officia, sed enim at.</p>
     </div>
+    
+    <!-- Modal Comprar-->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Body
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="comprar" class="visually-hidden">
+        <form action="" class="form">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu nome" aria-describedby="helpNome" required>
+                <small id="helpNome" class="text-muted">
+                    Digite um nome válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="text" name="email" class="form-control" id="email" placeholder="Digite seu e-mail" aria-describedby="helpEmail" required>
+                <small id="helpEmail" class="text-muted">
+                    Digite um nome válido
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" name="phone" class="form-control" id="phone" placeholder="Digite seu telefone" aria-describedby="helpPhone" required>
+                <small id="helpPhone" class="text-muted">
+                    Digite um telefone válido
+                </small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    
     
     <!-- libs -->
     <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
