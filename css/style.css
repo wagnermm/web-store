@@ -44,6 +44,10 @@ html {
 	font-family: 'FontAwesome';
 }
 
+.close-menu {
+	display: none;
+}
+
 .navbar-dark .navbar-nav .nav-item {
 	margin: 0px 20px;
 }
