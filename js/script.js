@@ -20,8 +20,8 @@ $('.navbar-toggler').click(function(){
     $('#navbarResponsive').show();
 })
 
-$('#navbarResponsive').click(function(){
-    $(this).hide();
+$('.close-menu').click(function(){
+    $('#navbarResponsive').hide();
 })
 
 
